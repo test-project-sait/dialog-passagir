@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нам важно Ваше мнение</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body class="page">
+  <header class="header">
+    <img class="header_logo" src="./TransSISTEMS.png" alt="ПКТС">
+  </header>
+
+  <section class="description">
+    <img class="description_img" src="./t5.jpg" alt="Троллейбус">
+    <p id="descriptionShort" class="description_text"><span class="description_span">«Адмирал»</span> – самый современный отечественный троллейбус. Специалисты ПК Транспортные системы разрабатывали эту машину с учетом новейших технических решений, воплощая мечты о комфортном, красивом и безопасном городском транспорте... <span class="toLong" id="readMore">- читать далее</span></p>
+    <p id="descriptionLong" class="description_text hide">
+      <span class="description_span">«Адмирал»</span> – самый современный отечественный троллейбус. Специалисты ПК Транспортные системы разрабатывали эту машину с учетом новейших технических решений, воплощая мечты о комфортном, красивом и безопасном городском транспорте.</br></br>
+      Все здесь сделано для удобства пассажиров, начиная от хорошо читаемого маршрутоуказателя, от трех широких дверей, от мягкого, неназойливого освещения салона. Низкий пол делает троллейбус «Адмирал» доступным для родителей с колясками и маломобильных жителей. В отсутствие ступенек посадка и высадка пассажиров занимает меньше времени, такая машина быстрее идет от кольца до кольца. В салоне летом будет прохладно, а зимой тепло благодаря кондиционеру. Четыре медиакомплекса информируют пассажиров о том, в какой точке маршрута находится машина. </br></br>
+      Такой троллейбус уже может соперничать с личным автомобилем. <span class="toLong" id="readLess">Свернуть</span></p>
+
+     </section>
+
+  <section class="feedback">
+    <h2 class="feedback_title">Нам важно Ваше мнение!</h2>
+    <form class="feedback_form" name="feedback" novalidate>
+      <h2 class="form_title">Оставьте свой отзыв</h2>
+      <!-- <label class="input-wrapper_label" for="email">Ваш эл. адрес:</label>
+      <input 
+        id="email" 
+        class="input-wrapper_input" 
+        type="email" 
+        name="email"
+        autocomplete="off"
+        placeholder="Е-мейл"
+      >
+        <span id="email-error" class="input-error"></span> -->
+
+
+      <label class="input-wrapper_label" for="username">Ваше имя:</label>
+      <input 
+        class="input-wrapper_input" 
+        id="username" 
+        placeholder="Имя"
+        autocomplete="off"
+        minlength="2"
+        maxlength="200"
+        required 
+        type="text" 
+        name="username"
+      >
+      <span id="username-error" class="input-error"></span>
+
+      <label class="input-wrapper_label" for="user_feedback">Ваше мнение:</label>
+      <textarea 
+        class="form_textarea" 
+        id="user_feedback" 
+        name="text"
+        placeholder="Напишите свои впечатления о троллейбусе"
+      ></textarea>
+      <button class="form_submit">Отправить</button>
+      
+    </form>
+    <div class="spinner"><i></i></div>
+  </section>
+  
+  <footer class="footer">
+    <h2 class="footer_title">Следите за нами в наших соцсетях</h2>
+    <div class="footer_img">
+      <img class="footer_image" src="./instagram.png" alt="Инстаграмм">
+      <img class="footer_image" src="./link.png" alt="Ссылка">
+      <img class="footer_image" src="./youtube.png" alt="Youtube">
+    </div>
+  </footer>
+
+  <script type="module" src="./index.js"></script>
+</body>
+</html>
